@@ -38,7 +38,9 @@ public class LoginPage {
 	
 	public void clickOnMyAccount() {
 
-		myaccount.click();
+		Actions ac = new Actions(driver);
+		ac.moveToElement(myaccount).click().build().perform();
+//		myaccount.click();
 	}
 	
 	public void clickOnLogin() {

@@ -57,9 +57,7 @@ public class RegistrationPage {
 	
 	public void clickMyAccount() {
 
-		Actions ac = new Actions(driver);
-		ac.moveToElement(myaccount).click().build().perform();
-//		myaccount.click();
+		myaccount.click();
 
 	}
 
