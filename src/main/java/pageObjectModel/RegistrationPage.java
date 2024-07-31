@@ -54,9 +54,12 @@ public class RegistrationPage {
 	@FindBy(xpath = "//input[@type='submit']")
 	private WebElement submit;
 
+	
 	public void clickMyAccount() {
 
-		myaccount.click();
+		Actions ac = new Actions(driver);
+		ac.moveToElement(myaccount).click().build().perform();
+//		myaccount.click();
 
 	}
 
