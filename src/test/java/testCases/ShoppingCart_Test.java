@@ -46,7 +46,7 @@ public class ShoppingCart_Test {
 	
 	}
 	
-	@Test
+	@Test(priority= 4)
 	public void completeCheckout() {
 		
 		sc.clickViewCart();

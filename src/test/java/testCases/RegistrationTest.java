@@ -24,7 +24,7 @@ public class RegistrationTest {
 		rc.openWebsite("https://naveenautomationlabs.com/opencart/index.php?route=common/home");
 	}
 
-	@Test
+	@Test(priority= 1)
 	public void completeRegistration() {
 		
 		register.clickMyAccount();

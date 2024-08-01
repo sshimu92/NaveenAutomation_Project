@@ -27,7 +27,7 @@ public class LoginTest {
 		rc.openWebsite("https://naveenautomationlabs.com/opencart/index.php?route=common/home");
 	}
 	
-	@Test
+	@Test(priority= 2)
 	public void loginTest() {
 		
 		lp.clickOnMyAccount();
@@ -37,7 +37,7 @@ public class LoginTest {
 		lp.clickOnLoginButton();
 	}
 	
-	@Test
+	@Test(priority= 3)
 	public void verifyHomePage() {
 		
 		 Assert.assertEquals(driver.getCurrentUrl(), "https://naveenautomationlabs.com/opencart/index.php?route=account/account");
